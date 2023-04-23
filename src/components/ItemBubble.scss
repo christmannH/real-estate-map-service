@@ -1,0 +1,131 @@
+.popOutDiv {
+    position: absolute;
+    left: -100px;
+    z-index: 10;
+    top: 20px;
+    background-color: #ffffff;
+}
+
+.popContainer {
+    box-shadow: -2px 2px 2px 0 rgb(178 178 178 / 40%);
+    border-radius: 10px;
+    background: white;
+    display: block;
+    color: black;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.popItems {
+    margin: 15px;
+    display: flex;
+}
+
+.popImg {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.popDetail {
+    font-size: 17px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.popDetailTitle {
+    margin-bottom: 8px;
+}
+
+.roomsLine {
+    span {
+        vertical-align: middle;
+    }
+
+    img {
+        height: 1.0em;
+        margin-right: .5em;
+        vertical-align: middle;
+    }
+}
+
+.marker_grey {
+    position: absolute;
+    transform: translate(-50%, calc(-100% - 6px));
+    width: 56px;
+    height: auto;
+    background-color: grey;
+    padding: 2px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+
+    &::after {
+        position: absolute;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid grey;
+        transform: translate(23px, 30%);
+        z-index: 4;
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+    }
+}
+
+.marker_green {
+    position: absolute;
+    transform: translate(-50%, calc(-100% - 6px));
+    width: 56px;
+    height: auto;
+    background-color: green;
+    padding: 2px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+
+    &::after {
+        position: absolute;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid green;
+        transform: translate(23px, 30%);
+        z-index: 4;
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+    }
+}
+
+.marker_purple {
+    position: absolute;
+    transform: translate(-50%, calc(-100% - 6px));
+    width: 56px;
+    height: auto;
+    background-color: purple;
+    padding: 2px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 4;
+
+    &::after {
+        position: absolute;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid purple;
+        transform: translate(23px, 30%);
+        z-index: 4;
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+    }
+}
